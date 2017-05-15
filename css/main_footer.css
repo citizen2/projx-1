@@ -1,0 +1,143 @@
+/*Main footer*/
+
+footer{
+	flex: 0 0 auto;
+	background-color: #BEBEBE;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.main_footer{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.footer_rss{
+	flex: 2 1 250px;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 20px 0px 20px 20px;
+}
+
+.footer_rss form input[type="email"]{
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 60%;
+}
+
+.footer_rss form input[type="submit"]{
+	margin-left: 20px;
+	border-radius: 4px;
+}
+
+.footer_rss p{
+	display: block;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: white;
+	text-transform:uppercase;
+}
+
+.map_of_site_footer{
+	flex: 1 1 250px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.map_of_site_footer_link{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.map_of_site_footer_link ul{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	list-style-type: none;
+}
+
+.map_of_site_footer_link ul li{
+	display: inline;
+}
+
+.map_of_site_footer_link ul li a{
+	display: inline-block;
+	padding: 9px 20px 5px 20px;
+	border-radius:20px;
+	text-decoration: none;	
+	text-transform:uppercase;
+	color: white;
+	transition: all .5s;
+}
+
+.map_of_site_footer_link ul li a:hover{
+	transform: scale(1.1);
+	color: #d2d9dd;
+}
+
+.map_of_site_footer_social{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	padding-left: 20px;
+}
+
+.map_of_site_footer_social div{
+	flex: 1 1 50px;
+	display: flex;
+	max-width: 50px;
+	flex-flow: column nowrap;
+	padding: 10px;
+	margin: 20px 5px 5px 5px;
+	text-align: center;
+	transition: all .5s;
+}
+
+.map_of_site_footer_social div:hover{
+	 transform: scale(1.1);
+}
+
+.map_of_site_footer_social div p{
+	opacity: 0;
+}
+
+/*Телефоны*/
+@media(max-width:480px){
+	.footer_rss{
+		margin-bottom:3px;
+	}
+	
+	.map_of_site_footer_link ul{
+		margin-top:10px;
+	}
+	
+	.map_of_site_footer_social div{
+		margin-top: 25px;
+	}
+	
+	.map_of_site_footer_link{
+		flex: 1 1 auto;
+	}
+	
+	.map_of_site_footer_social{
+		flex: 1 1 auto;
+	}
+}
+
+@media(max-width:321px){
+	.map_of_site_footer_social{
+		margin-top: 5px;
+	}
+}
+/*Планшеты*/
+@media (min-width: 481px) and (max-width: 768px){	
+	
+	.map_of_site_footer_social div{
+		margin-top: 30px;
+	}
+}
+	footer{
+		heigth: 15%;
+	}

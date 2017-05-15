@@ -1,0 +1,52 @@
+#side_menu{
+	width: 180px;
+	height: 100%;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background-color: #E8C658;
+	padding: 20px 20px 0 20px;
+	position: fixed;
+	left: -180px;
+	z-index: 1000;
+}
+
+#menu_button{
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin: 0px 20px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	background-image: url(../images/menu.svg);
+	background-size: 30px 30px;
+}
+
+#side_menu div{
+	text-align: center;
+}
+
+#side_menu div h3{
+	font-family: Arial;
+	font-style: uppercase;
+	font-size: 2em;
+	color: #30829B;
+}
+
+#side_menu_links li{
+	margin: 10px 10px 10px -5px;
+	display: block;
+	padding: 10px;
+}
+
+.side_menu_buttons{
+	text-decoration: none;
+	font-size: 1.1em;
+	color: rgb(32,178,170);
+	font-weight: normal;
+	padding: 10px;
+	border-bottom: 2px solid #E88848;
+	transition: all .5s;
+}
+
+.side_menu_buttons:hover{
+	color: #ffffff;
+	transform: scale(1.5);
+}

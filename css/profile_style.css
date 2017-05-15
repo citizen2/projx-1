@@ -1,0 +1,232 @@
+#bacground_img_at_profile{
+	flex: 1 1 5%;
+	min-height: 5%;
+	max-height: 10%;
+	padding: 0;
+	background-image: url(../header.jpg);
+	background-size: cover;
+}
+
+#main_profile{
+	flex: 1 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	background-color: #EEEEE0;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.profile_with_photo{
+	flex: 1 1 20%;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.profile_main_inform{
+	flex: 4 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/*Друзья*/
+#profile_main_inform_list_of_friends{
+	align-self: flex-start;
+	flex: 1 1 30%;
+	display: flex;
+	flex-flow: column nowrap;
+	box-shadow: 0px 0px 6px -2px #000000;
+	background-color: #FFFAFA;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+#profile_main_inform_list_of_friends h3{
+	flex: 1 1 auto;
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 5px;
+	margin: 5px;
+	border-bottom: 3px solid #FFA500;
+}
+
+#main_friends_list{
+	margin-top: 10px;
+	flex: 5 1 auto;
+	max-height: 70%;
+	overflow: auto;
+}
+
+
+#main_friends_list div{
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 10px;
+	padding: 5px;
+	align-content: center;
+	justify-content: center;
+}
+
+#main_friends_list div img{
+	flex: 1;
+	max-width: 45px;
+	max-height: 45px;
+	min-width: 45px;
+	min-height: 45px;
+	border-radius: 50%;
+}
+
+#main_friends_list div p{
+	flex: 3;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+
+/*Данные о пользователе*/
+.profile_main_inform_data{
+	flex: 3 1 70%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#profile_main_first_row{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+#profile_main_second_row{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+       
+}
+
+#profile_main_second_row:first-child{
+    flex: 1 1 50%;
+}
+
+.second_row_flex{
+    flex: 1 1 auto;
+}
+
+
+/*Рейтинг usera*/
+.rating_of_user{
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1 1 33%;
+	margin: 10px 0px 0px 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 6px -2px #000000;
+	background-color: #FFFAFA;
+	border-radius: 5px;
+        color: black;
+        transition: all .5s;
+}
+
+.rating_of_user:hover{
+    transform: scale(1.02);
+    background-color: #efeaea; 
+}
+
+.profile_main_name{
+	flex: 1 1 auto;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+.some_number_of_user{
+	flex: 3 1 auto;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 1.8em;
+}
+
+#progressbar_of_level{
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*Стили для модального окна*/
+
+.modal-content{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 5%;
+}
+
+.modal_name, .modal_desc, .modal_value{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.modal_name{
+    font-size: 3em;
+}
+
+.modal_desc{
+    font-size: 2em;
+}
+
+.modal_value{
+    font-size: 5em;
+}
+
+.close_window{
+    width: 44px;
+    margin: auto; 
+    margin-bottom: 10px;
+}
+
+.close_modal{
+    width: 44px;
+    height: 44px;
+    transition: all .5s;
+}
+
+.close_modal:hover{
+   cursor: pointer;
+   transform: scale(1.1) rotate(90deg);
+}
+
+/*Стили для анимации прогресса уровня*/
+
+.anim_Wrapper{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: auto;
+}
+
+svg {
+    padding: 20px;
+}
+
+svg path {
+    stroke: #14803f;    
+    stroke-width: 13px;
+    // stroke-linecap: round;
+}
+
+svg text {
+    stroke: none;
+    fill: #14803f;
+}
+
+.enterValue{
+    display: none;
+}

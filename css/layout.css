@@ -1,0 +1,203 @@
+@import "form_style.css";
+@import "main_footer.css";
+@import "quiz_style.css";
+@import "profile_style.css";
+@import "main_header.css";
+@import "news_and_popular_style.css";
+@import "category_of_quiz_style.css";
+
+/*Base style*/
+html{
+	background-color: #EEEEE0;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+body, html{
+	height: 100%;
+}
+
+.main_content, header h1, header nav, .main_footer, #logo{
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.main_content{
+	flex: 1 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background-color: #EEEEE0;
+}
+
+.clear:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/*Кнопка для всего*/
+.main_button{
+	display:inline-block;
+	text-decoration: none;
+	font-size: 1.2em;	
+	color: #FFA500;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 112px 112px 112px 112px;
+	-moz-border-radius: 112px 112px 112px 112px;
+	-webkit-border-radius: 112px 112px 112px 112px;
+	border: 3px solid #FFA500;
+	transition: all 0.5s;
+}
+
+.main_button:hover{
+	transform: scale(1.1);
+	background-color: #FFA500;
+	color: white;
+}
+
+/*Side bar menu*/
+
+#side_menu{
+	width: 180px;
+	height: 100%;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	background-color: #FFFAFA;
+	padding: 20px 20px 0 20px;
+	position: fixed;
+	left: -180px;
+	z-index: 1000;
+}
+
+#menu_button{
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin: 0px 20px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	background-image: url(menu.svg);
+	background-size: 30px 30px;
+}
+
+#side_menu div{
+	text-align: center;
+}
+
+#side_menu div h3{
+	font-family: Arial;
+	font-style: uppercase;
+	font-size: 2em;
+	color: #30829B;
+}
+
+#side_menu_links li{
+	margin: 10px 10px 10px -5px;	
+	display: block;
+	padding: 10px;
+}
+
+.side_menu_buttons{
+	text-decoration: none;
+	font-size: 1.1em;	
+	color: rgb(32,178,170);
+	font-weight: normal;
+	padding: 10px 0px 5px 0px;
+	display: block;
+	border-bottom: 2px solid #FFA500;
+	transition: all .5s;
+}
+
+.side_menu_buttons:hover{
+	color: #d2d9dd;
+	transform: scale(1.1);
+}
+
+/*Login slideDown form*/
+
+#login_div{/*общий div входа*/
+	position: absolute;
+	opacity: 0;
+	right: 0px;
+	top: 100px;
+	width: 270px;
+	z-index: 100;
+	background-color: #FFFAFA;
+	border-radius: 0 0 5px 5px;
+}
+
+#login_div form {
+	padding: 10px 10px 0 10px;
+}
+
+#login_div form input[type='text'], #login_div form input[type='password']{
+	width: 100%;
+	margin-top: 10px;
+}
+
+#login_div form input[type='submit']{
+	border-radius: 4px;
+	width: 100%;
+}
+
+#open_sign_up{/*кнопка "Вход"*/
+	margin: 0;
+	cursor: pointer;
+	color: white;
+	padding: 5px 0 5px 30px;
+	border-radius: 0 0 5px 5px;
+}
+
+#login_div label {
+	font-size: .75em;
+	color: white;
+	font-weight: bold;
+	width: 100px;
+	text-align:right;
+	margin: 0 15px 0 0;
+	display: inline-block;
+}
+
+#login_div .button {
+	text-align: center;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*Форма регистрации всплывающая*/
+
+.regestration_dialog form input[type="text"],
+.regestration_dialog form input[type="email"],
+.regestration_dialog form input[type="password"],
+.regestration_dialog form input[type="submit"]{
+	margin-top: 13px;
+	width: 100%;
+} 
+
+.regestration_dialog form input[type="submit"]{
+	border-radius: 5px;
+}
+
+.enter_dialog form input[type="text"], 
+.enter_dialog form input[type="password"],
+.enter_dialog form input[type="submit"]{
+        margin-top: 13px;
+	width: 100%;
+}
+
+.enter_dialog form input[type="submit"]{
+        border-radius: 5px;
+}
+
+/*Для анимации в категориях*/
+.hidden{
+	opacity:0;
+}
+.visible{
+	opacity:1;
+}

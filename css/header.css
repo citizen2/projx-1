@@ -1,0 +1,57 @@
+/*Анимация для кнопок*/
+@keyframes main_button{
+
+	from{
+        transform: scale(1);
+    }
+	50%{
+		transform: scale(1.1);
+	}
+    to{
+        transform: scale(1);
+		background-color: #E8C658;
+    }
+}
+
+.main_button:hover{
+	animation-name: main_button;
+	animation-duration: 2s;
+}
+
+header{
+	background-color: #9C9C9C;/*rgb(152,251,152)*/
+	padding-bottom: 5px;
+	border-bottom: 2px solid #E88848;
+}
+
+#logo h1{
+	font-size: 3em;
+	color: #30829B;
+	font-family: Arial;
+	font-style: uppercase;
+	padding-left: 20px;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li{
+	float: right;
+	list-style: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: block;
+}
+
+.main_button{
+	display:inline-block;
+	text-decoration: none;
+	font-size: .8em;
+	color: white;
+	font-weight: normal;
+	padding: 10px 20px;
+	background: #E88848;
+	border-radius: 5px;
+}

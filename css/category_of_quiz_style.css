@@ -1,0 +1,73 @@
+/*Category of test or quiz*/
+
+.category_of_quiz_and_test_main{
+	flex: 3 1 250px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.category_of_quiz_and_test_main h3{
+	font-family: Arial;
+	font-style: uppercase;
+	font-size: 2em;
+	color: #30829B;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-bottom: 3px solid #FFA500;
+}
+
+.category_of_quiz_and_test{
+	display: flex;
+    flex-flow: column nowrap;
+	padding: 10px;
+	margin: 20px 5px 5px 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 6px -2px #000000;
+	background-color: #FFFAFA;
+	border-radius: 5px;
+}
+
+.category_of_quiz_and_test h5{
+	font-family: Arial;
+	font-style: uppercase;
+	font-size: 1.2em;
+	color: #30829B;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.content_of_category{
+	display: flex;
+    flex-flow: row wrap;
+	align-items: flex-start;
+	padding: 10px;
+	margin: 20px 5px 5px 5px;
+	box-sizing: border-box;
+}
+
+.content_of_category div{
+	flex: 1 1 100px;
+	display: flex;
+	max-width: 120px;
+	flex-flow: column nowrap;
+	padding: 10px;
+	margin: 20px 5px 5px 5px;
+	text-align: center;
+}
+
+.content_of_category div p{
+	font-family: Arial;
+	font-size: 1.2em;
+	margin-top: 15px;
+	color: #30829B;
+}
+
+/*Анимация категории*/
+
+.content_of_category div a{
+	transition: all .5s;
+}
+
+.content_of_category div a:hover{
+    transform: scale(1.2) rotate(360deg);
+}

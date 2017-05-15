@@ -1,0 +1,8 @@
+footer{
+	height: 10%;
+	background-color: grey;
+	clear: both;
+	margin-top: 10px;
+	border-top: 2px solid #E88848;
+	box-sizing: border-box;
+}
